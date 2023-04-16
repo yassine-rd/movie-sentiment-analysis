@@ -4,6 +4,8 @@
 
 The growing volume of user-generated content, particu- larly in the form of movie reviews, presents both challenges and opportunities for researchers and practitioners in the movie industry. Movie sentiment analysis has emerged as a vital tool to automatically process and interpret this vast repository of data, offering valuable insights into viewer preferences and opinions.
 
+![Movie Sentiment Analysis](./assets/banner.png)
+
 ## 🎬 About the Project
 
 In this project, we involve a comprehensive study of relevant NLP techniques, including data pre-processing, feature extraction, and model selection.
