@@ -29,8 +29,8 @@ the sentiment of a movie review entered by the user.
 A Docker image of the application has been deployed on Docker Hub. To run it locally, you need to have Docker installed on your machine. Then, run the following command:
 
 ```bash
-docker pull yassine-rd/movie-sentiment-analysis
-docker run -p 8501:8501 yassine-rd/movie-sentiment-analysis
+docker pull yassinerd/movie-sentiment-analysis
+docker run -p 8501:8501 yassinerd/movie-sentiment-analysis
 ```
 
 ### ☁️ On Streamlit Sharing
