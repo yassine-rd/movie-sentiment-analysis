@@ -40,10 +40,11 @@ warnings.filterwarnings("ignore")
 np.random.seed(123)
 
 # load stop words
+nltk.download('stopwords')
 stop_words = stopwords.words("english")
 
-# function to clean the text
 
+# function to clean the text
 
 @st.cache_data
 def process_review(text, remove_stop_words=True, lemmatize_words=True, stemming_words=True) -> str:
