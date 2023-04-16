@@ -18,7 +18,7 @@ The project consists of the following files:
 the sentiment of a movie review entered by the user.
 - [Movie_Sentiment_Analysis.ipynb](Movie_Sentiment_Analysis.ipynb): Contains the code for preprocessing the data, training the model, and evaluating the model.
 - [data](./data/): Contains the dataset used for this project.
-- [models](./model/): Contains the trained model.
+- [model](./model/): Contains the trained model.
 
 ## 💻 Try it out
 
