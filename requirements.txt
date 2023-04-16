@@ -2,6 +2,6 @@ joblib==1.2.0
 matplotlib==3.7.1
 nltk==3.8.1
 numpy==1.22.4
-pandas==2.0.0
+pandas
 scikit_learn==1.2.2
 streamlit==1.21.0
