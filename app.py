@@ -41,6 +41,7 @@ np.random.seed(123)
 
 # load stop words
 nltk.download('stopwords')
+nltk.download('wordnet')
 stop_words = stopwords.words("english")
 
 
