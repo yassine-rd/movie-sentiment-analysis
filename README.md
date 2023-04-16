@@ -1,4 +1,4 @@
-# Movie Sentiment Analysis: A Multinomial Na ̈ıve Bayes-Based Approach for Assessing User and Critic Opinions
+# Movie Sentiment Analysis: A Multinomial Naïve Bayes-Based Approach for Assessing User and Critic Opinions
 
 ## ✨ Abstract
 
