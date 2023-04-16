@@ -10,6 +10,8 @@ In this project, we involve a comprehensive study of relevant NLP techniques, in
 
 The chosen Multinomial Naïve Bayes algorithm will be trained and optimized on a dataset of user critic reviews, with model performance evaluated based on multiple evaluation metrics.
 
+Deployed [here](https://movie-sentiment.streamlit.app/).
+
 ## 📁 Project Structure
 
 The project consists of the following files:
