@@ -135,6 +135,7 @@ def make_prediction(review)-> tuple:
 
 
 # Set the app title
+st.set_page_config(page_title="Movie Sentiment Analysis")
 st.title("Movie Sentiment Analysis")
 st.write(
     "A simple machine learning application to predict the sentiment of a movie's review"
