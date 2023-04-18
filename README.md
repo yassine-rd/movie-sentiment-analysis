@@ -28,7 +28,7 @@ the sentiment of a movie review entered by the user.
 
 ### 🐳 Locally
 
-A Docker image of the application has been deployed on Docker Hub. To run it locally, you need to have Docker installed on your machine. Then, run the following command:
+A Docker [image](https://hub.docker.com/r/yassinerd/movie-sentiment-analysis) of the application has been deployed on Docker Hub. To run it locally, you need to have Docker installed on your machine. Then, run the following commands:
 
 ```bash
 docker pull yassinerd/movie-sentiment-analysis
@@ -40,6 +40,10 @@ docker run -p 8501:8501 yassinerd/movie-sentiment-analysis
 You can also run the app on Streamlit Sharing by clicking on the button below:
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://movie-sentiment.streamlit.app/)
+
+## 📄 Report
+
+The project report is available [here](report.pdf). It provides a detailed explanation of the methodologies used, results obtained, and conclusions drawn from the study.
 
 ## 💬 Contact
 
