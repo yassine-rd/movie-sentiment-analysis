@@ -33,7 +33,7 @@ You can also run the app on Streamlit Sharing by clicking on the button below:
 
 ## 📄 Report
 
-The project report is available [here](report.pdf). It provides a detailed explanation of the methodologies used, results obtained, and conclusions drawn from the study.
+The project report is available [here](/assets/pdf/report.pdf). It provides a detailed explanation of the methodologies used, results obtained, and conclusions drawn from the study.
 
 ## 💬 Contact
 
