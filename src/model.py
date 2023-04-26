@@ -1,3 +1,15 @@
+# -*-coding:Utf-8 -
+
+
+"""
+This script trains a sentiment classifier using a Naive Bayes model with text preprocessing techniques.
+It reads labeled movie review data, pre-processes the text, and trains a Multinomial Naive Bayes classifier.
+The model performance is evaluated using accuracy score and the trained classifier is saved to disk.
+
+@Date: April 26th, 2023
+@Author: Yassine RODANI
+"""
+
 import warnings
 import numpy as np
 import pandas as pd
@@ -80,7 +92,7 @@ def process_review(text, remove_stop_words=True, lemmatize_words=True, stemming_
     return ' '.join(tokens)
 
 
-def main():
+def main() -> None :
     # load data
     data = pd.read_csv("data/labeledTrainData.tsv", sep='\t')
     # clean the review
@@ -116,7 +128,7 @@ def main():
     print(f"Accuracy: {accuracy:.4f}")
 
     # save model
-    joblib.dump(sentiment_classifier, 'models/sentiment_model_pipeline2.pkl')
+    joblib.dump(sentiment_classifier, 'models/sentiment_model_pipeline.pkl')
 
 
 if __name__ == "__main__":
