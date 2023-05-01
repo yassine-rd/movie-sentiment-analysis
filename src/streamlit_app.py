@@ -122,7 +122,7 @@ def make_prediction(review)-> tuple:
     clean_review = process_review(review)
 
     # load the model and make prediction
-    model = joblib.load("model/sentiment_model_pipeline.pkl")
+    model = joblib.load("models/sentiment_model_pipeline.pkl")
 
     # make prection
     result = model.predict([clean_review])
