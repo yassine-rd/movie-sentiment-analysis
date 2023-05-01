@@ -134,12 +134,50 @@ def make_prediction(review)-> tuple:
     return result, probability
 
 
-# Set the app title
-st.set_page_config(page_title="Movie Sentiment Analysis")
+# Set page configuration
+st.set_page_config(page_title="Movie Sentiment Analysis", layout="centered", page_icon="🎬")
 st.title("Movie Sentiment Analysis")
 st.write(
     "A simple machine learning application to predict the sentiment of a movie's review"
 )
+
+html_temp = """
+                <div style="background-color:{};padding:1px">
+                
+                </div>
+                """
+
+# Set page sidebar
+with st.sidebar:
+    st.markdown("""
+    # About 
+    By leveraging the power of advanced natural language processing techniques, 
+    this simple app is designed to accurately predict the sentiment of a movie review, 
+    providing a quick and efficient way to gauge public opinion on films.
+    
+    """)
+    st.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),
+                unsafe_allow_html=True)
+    st.markdown("""
+    # How does it work
+    Simply input the text of your movie's review in the text box below and click on the 'Make Prediction' button.
+    
+    For instance, you can try the following review:
+    
+    "WOW!! Elysian Dreams is a mesmerizing cinematic masterpiece, delivering a 
+    powerful narrative, outstanding performances, and captivating visuals that 
+    leave audiences spellbound."
+    
+    
+    
+    """)
+    st.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),
+                unsafe_allow_html=True)
+    st.markdown("""
+    Made by [yassine-rd](https://github.com/yassine-rd) with ❤️
+    """,
+                unsafe_allow_html=True,
+                )
 
 # Include a form to receive a movie's review
 form = st.form(key="my_form")
