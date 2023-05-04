@@ -6,3 +6,4 @@ pandas
 seaborn
 scikit_learn==1.2.2
 streamlit==1.21.0
+"trubrics[streamlit]"
