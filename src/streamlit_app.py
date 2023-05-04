@@ -47,7 +47,7 @@ stop_words = stopwords.words("english")
 
 # function to clean the text
 
-@st.cache_data
+@st.cache
 def process_review(text, remove_stop_words=True, lemmatize_words=True, stemming_words=True) -> str:
     """
     Clean and preprocess text data by removing unwanted characters, stop words, and lemmatizing words.
@@ -100,7 +100,7 @@ def process_review(text, remove_stop_words=True, lemmatize_words=True, stemming_
 # functon to make prediction
 
 
-@st.cache_data
+@st.cache
 def make_prediction(review)-> tuple:
     """
     Predicts the sentiment of a movie review using a trained classification model.
