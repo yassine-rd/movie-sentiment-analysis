@@ -20,8 +20,6 @@ The predicted sentiment and its probability are then displayed to the user.
 
 # import packages
 import streamlit as st
-from trubrics.integrations.streamlit import FeedbackCollector
-import datetime
 import os
 import numpy as np
 
@@ -49,7 +47,7 @@ stop_words = stopwords.words("english")
 
 # function to clean the text
 
-@st.cache
+@st.cache_data
 def process_review(text, remove_stop_words=True, lemmatize_words=True, stemming_words=True) -> str:
     """
     Clean and preprocess text data by removing unwanted characters, stop words, and lemmatizing words.
@@ -102,7 +100,7 @@ def process_review(text, remove_stop_words=True, lemmatize_words=True, stemming_
 # functon to make prediction
 
 
-@st.cache
+@st.cache_data
 def make_prediction(review)-> tuple:
     """
     Predicts the sentiment of a movie review using a trained classification model.
@@ -186,29 +184,14 @@ form = st.form(key="my_form")
 review = form.text_input(label="Please enter the text of your movie's review")
 submit = form.form_submit_button(label="Make Prediction")
 
-if "result" not in st.session_state:
-    st.session_state.result = None
-    st.session_state.probability = None
-
 if submit:
-    # Make prediction from the input text
+    # make prediction from the input text
     result, probability = make_prediction(review)
 
-    # Save the results to session state
-    st.session_state.result = result
-    st.session_state.probability = probability
-
-if st.session_state.result is not None:
     # Display results of the NLP task
     st.header("Results")
 
-    if int(st.session_state.result) == 1:
-        st.write("This is a positive review with a probability of ", st.session_state.probability)
+    if int(result) == 1:
+        st.write("This is a positive review with a probabiliy of ", probability)
     else:
-        st.write("This is a negative review with a probability of ", st.session_state.probability)
-
-    st.subheader("How satisfied are you with this prediction?")
-    collector = FeedbackCollector()
-    collector.st_feedback(feedback_type="faces",
-                          path=f"feeds/thumbs_{datetime.datetime.now().timestamp()}.json",
-                          open_feedback_label="An open text field")
+        st.write("This is a negative review with a probabiliy of ", probability)
