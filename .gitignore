@@ -234,4 +234,4 @@ pyrightconfig.json
 .ionide
 
 # Some project's folders
-/feeds/
+/feeds/*
